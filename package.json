@@ -1,0 +1,17 @@
+{
+  "name": "@reuters-graphics/graphics-atlas-topojson",
+  "version": "0.1.0",
+  "description": "TopoJSON country + disputed-border assets for @reuters-graphics/graphics-atlas-client — polygons & lines at three scales, built from reuters-graphics/country-borders (Overture Maps, ODbL).",
+  "repository": "https://github.com/reuters-graphics/graphics-atlas-topojson",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "topojson/**/*"
+  ],
+  "scripts": {
+    "build:maps": "echo \"TODO: build pipeline — see README / graphics-atlas-client#31\" && exit 1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

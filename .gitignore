@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Build scratch / intermediate data
+tmp/
+*.log
+
+# country-borders source (pinned build input; fetched at build time)
+input/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
