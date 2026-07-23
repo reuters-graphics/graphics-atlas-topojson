@@ -8,6 +8,11 @@ tmp/
 # country-borders source (pinned build input; fetched at build time)
 input/
 
+# Generated map assets — produced by `npm run build:maps` and included in the
+# npm package via the "files" field / prepublishOnly. Not committed while the
+# pipeline is still in development (graphics-atlas-client#31).
+topojson/
+
 # OS / editor
 .DS_Store
 .vscode/

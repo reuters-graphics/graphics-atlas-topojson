@@ -9,9 +9,20 @@
     "topojson/**/*"
   ],
   "scripts": {
-    "build:maps": "echo \"TODO: build pipeline — see README / graphics-atlas-client#31\" && exit 1"
+    "build:maps": "node bin/buildMaps/index.js",
+    "build:polygons": "node bin/buildMaps/buildPolygons.js",
+    "build:lines": "node bin/buildMaps/buildLines.js",
+    "prepublishOnly": "npm run build:maps"
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "@reuters-graphics/graphics-atlas-client": "^0.5.2",
+    "@turf/bbox": "^7.2.0",
+    "@turf/boolean-intersects": "^7.2.0",
+    "@turf/helpers": "^7.2.0",
+    "topojson-client": "^3.1.0",
+    "topojson-server": "^3.0.1"
   }
 }
